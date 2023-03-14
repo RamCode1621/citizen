@@ -16,7 +16,7 @@ import { ConfigModule } from '@nestjs/config';
       port: configuration().database.port,
       username: configuration().database.username,
       password: configuration().database.password,
-      database: configuration().database.database,
+      database: configuration().database.schema,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
       autoLoadEntities: true,
